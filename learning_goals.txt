@@ -1,0 +1,6 @@
+# Things learned so far:
+
+> Setting up and working with a Django Project (including multiple apps)
+> URLS and Views in Django
+> Templates and Static Files in Django
+> Rendering content dynamically
