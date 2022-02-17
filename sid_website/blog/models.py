@@ -32,6 +32,9 @@ class Post(models.Model):
     author = models.ForeignKey(Author, on_delete=models.SET_NULL, null=True, related_name="posts") # deleting an author does not delete all their posts
     tags = models.ManyToManyField(Tag)
 
+    def __str__(self):
+        return self.title
+
 class Comment(models.Model):
     user_name = models.CharField(max_length=120) # Yours Name
     user_email = models.EmailField() # Your E-Mail
