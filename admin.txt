@@ -1,0 +1,4 @@
+# details for admin pannel
+# sid
+# test@mail.com
+# sid
