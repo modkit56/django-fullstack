@@ -27,12 +27,14 @@ class AllPostsView(ListView):
     context_object_name = "all_posts"
 
 class InduvidualPostView(View):
+
     def get(self, request, slug):
         post = Post.objects.get(slug=slug)
         context = {
           "post": post,
           "post_tags": post.tags.all(),
-          "comment_form": CommentForm()
+          "comment_form": CommentForm(),
+          "comments": post.comments.all().order_by("-id")
         }
         return render(request, "blog/post-detail.html", context)
 
@@ -50,7 +52,8 @@ class InduvidualPostView(View):
         context = {
           "post": post,
           "post_tags": post.tags.all(),
-          "comment_form": comment_form
+          "comment_form": comment_form,
+          "comments": post.comments.all().order_by("-id")
         }
         return render(request, "blog/post-detail.html", context)
 

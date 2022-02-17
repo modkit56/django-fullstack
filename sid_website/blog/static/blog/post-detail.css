@@ -1,3 +1,32 @@
+#comment_box {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 60rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 1rem 2rem;
+}
+
+#comment_box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#comment_box li {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+}
+
+#comment_box li:nth-last-of-type {
+  border-bottom: none;
+}
+
+#comment_box h2 {
+  color: #464646;
+}
+
 body {
   background-color: #e7e7e7;
 }
