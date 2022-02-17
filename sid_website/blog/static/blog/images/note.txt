@@ -1,0 +1,1 @@
+# after adding the upload image feature, this folder is redundant but I left it for reviewing purposes
